@@ -7,3 +7,5 @@ Front End - HTML, CSS, JavaScript
 백엔드 (데이터베이스 + 서버)
 
 연동됨?
+
+하이
