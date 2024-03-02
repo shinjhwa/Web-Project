@@ -8,6 +8,8 @@ Front End - HTML, CSS, JavaScript
 
 연동됨?
 
+하이
+
 학과별 블라인드 웹
 
 각 대학의 각 학과를 기본으로(학과만 모을 수 있어도 낫배드)
