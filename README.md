@@ -4,8 +4,14 @@
 
 Front End - HTML, CSS, JavaScript
 
-백엔드 (데이터베이스 + 서버)
+Back End - Python, Django
 
-연동됨?
+Database - MySQL + Python의 DB접근 라이브러리
 
-하이
+Network
+
+
+
+
+
+
