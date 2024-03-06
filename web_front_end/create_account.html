@@ -26,19 +26,22 @@
                     <span class="box int_pass">
                         <input type="text" id="pswd1" class="int" maxlength="20" 
                         placeholder = "비밀번호는 영문, 숫자 포함 8글자 이상 20글자 미만" 
-                        onfocus = this.placeholder= ' ' " oninput = checkPassword()">
-                        <span id="alertText" style="display:none;">사용불가</span>
+                        oninput = "checkPassword()">
+                        <span id="alertText" class="error_next_box"></span>
                     </span>
                     <span class="error_next_box"></span>
+                    <div id="alertTextContainer" class="error_next_box" style="display: none;">
+                        <span id="alertText"></span>
+                    </div>
                 </div>
 
                 <!--PW2-->
                 <div>
-                    <h3 class="join_title"></h3><label for="pswd1">비밀번호 재확인</label></h3>
+                    <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
                     <span class="box int_pass_check">
-                        <input type="text" id="pswd2" class="int" maxlength="20">
+                        <input type="text" id="pswd2" class="int" maxlength="20" oninput = "confirmPassword()">
                     </span>
-                    <span class="error_next_box id="confirmError" style="display:none;">비밀번호가 일치하지 않습니다.</span>
+                    <span id = "confirmError" class = "error_next_box">비밀번호가 일치하지 않습니다.</span>
                 </div>
 
                 <!--NAME-->
