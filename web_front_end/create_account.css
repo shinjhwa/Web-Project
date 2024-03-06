@@ -1,3 +1,4 @@
+
 /* 레이아웃 틀 */
 html {
     height: 100%;
@@ -6,23 +7,24 @@ html {
 body {
     margin: 0;
     height: 100%;
+    display: flex;
+    justify-content: center;
     background: #f5f6f7;
-    font-family: Dotum,'돋움',Helvetica,sans-serif;
-}
-#logo {
-    width: 240px;
-    height: 44px;
-    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
 #header {
-    padding-top: 62px;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
+
 #wrapper {
-    position: relative;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
 }
 
 #content {
@@ -31,9 +33,6 @@ body {
     transform: translate(-50%);
     width: 460px;
 }
-
-
-
 
 /* 입력폼 */
 
@@ -68,10 +67,11 @@ h3 {
     border: none;
     background: #fff;
     font-size: 15px;
+    border-radius: 5px;
 }
 
 input {
-    font-family: Dotum,'돋움',Helvetica,sans-serif;    
+    font-family: Dotum,'돋움',Helvetica,sans-serif;   
 }
 
 .box.int_id {
@@ -84,15 +84,6 @@ input {
 
 .box.int_pass_check {
     padding-right: 40px;
-}
-
-.step_url {
-    /*@naver.com*/
-    position: absolute;
-    top: 16px;
-    right: 13px;
-    font-size: 15px;
-    color: #8e8e8e;
 }
 
 .pswdImg {
@@ -144,6 +135,7 @@ select {
     border: none;
     cursor: default;
     font-family: Dotum,'돋움',Helvetica,sans-serif;
+    border-radius : 5px;
 }
 
 /* 에러메세지 */
@@ -152,16 +144,25 @@ select {
     margin-top: 9px;
     font-size: 12px;
     color: red;    
-    display: none;
+    display : none;
 }
 
-#alertTxt {
+#alertText {
     position: absolute;
     top: 19px;
     right: 38px;
     font-size: 12px;
-    color: red;
-    display: none;
+    display: inline-block;
+}
+
+/* 사용 가능한 비밀번호의 스타일 */
+.alert-success {
+    color: green; /* 성공 메시지 색상 */
+}
+
+/* 사용 불가능한 비밀번호의 스타일 */
+.alert-danger {
+    color: red; /* 에러 메시지 색상 */
 }
 
 /* 버튼 */
@@ -172,12 +173,26 @@ select {
 
 #btnJoin {
     width: 100%;
-    padding: 21px 0 17px;
-    border: 0;
+    padding: 20px; /* 패딩 조정 */
+    background-color: #ff4500; /* 버튼 배경색 */
+    color: white; /* 버튼 글자색 */
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    color: #fff;
-    background-color: #5e95c2;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: Dotum,'돋움',Helvetica,sans-serif;
+    font-family: Arial, sans-serif; /* 폰트 스타일 변경 */
+    font-size: 16px;
+}
+
+#btnJoin:hover {
+    background-color: #ff6347; /* 호버 상태 배경색 */
+}
+
+/* 링크 스타일 */
+.links a {
+    color: black;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #555;
 }
