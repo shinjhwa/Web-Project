@@ -6,19 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}"> <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
     <div class="login-container">
         <h2>로그인</h2>
-        <form action="/login" method="post"> <!-- 로그인 처리 경로 -->
+        <form action="/login" method="post">
+            {% csrf_token %}
             <div class="form-group">
-                <label for="username">아이디:</label>
-                <input type="text" id="username" name="username" required>
+                <label for="id_username">{{ form.username.label }}</label>
+                {{ form.username }}
             </div>
             <div class="form-group">
-                <label for="password">비밀번호:</label>
-                <input type="password" id="password" name="password" required>
+                <label for="id_password">{{ form.password.label }}</label>
+                {{ form.password }}
             </div>
             <button type="submit">로그인</button>
         </form>
